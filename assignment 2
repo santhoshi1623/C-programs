@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int i=1, a, b;
+	int Evensum=0;
+	int Oddsum=0;
+	printf("Enter a value:");
+	scanf("%d", &a);
+	printf("Enter b value:");
+	scanf("%d", &b);
+	while(i<=a)
+	{
+		if(i%b==0)
+		{
+			printf("%d\t", i);
+			
+			if(i%2==0)
+	        {
+	        	Evensum+=i;
+			}
+			else
+			{
+				Oddsum+=i;
+			}
+		}
+		i++;
+	 } 
+	 printf("\nEvensum=%d\nOddsum=%d\n", Evensum, Oddsum);
+	 return 0;
+}
